@@ -6,6 +6,7 @@ import VueMacros from 'unplugin-vue-macros'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base : '/element-plus-pro/',
   resolve: {
     alias: {
       '@/': `${path.resolve(__dirname, './')}/`,
