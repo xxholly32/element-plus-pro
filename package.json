@@ -7,7 +7,8 @@
     "docs:serve": "pnpm run --C docs serve",
     "docs:build": "pnpm run -C docs build",
     "docs:preview": "pnpm run -C docs preview",
-    "build": "pnpm run --filter docs build:generate && npm run docs:build",
+    "generate": "pnpm run --filter docs build:generate",
+    "build": "npm run generate && npm run docs:build",
     "lint": "eslint . --fix",
     "deploy": "bash deploy.sh"
   },

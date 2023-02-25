@@ -12,7 +12,8 @@ pnpm install
 
 ```bash
 # 拉取element-plus 文档
-pnpm run --filter docs build:generate
+npm run generate
 # 启动文档
-pnpm run --filter docs dev
+npm run dev
 ```
+

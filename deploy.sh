@@ -1,51 +1,22 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+#!/usr/bin/env sh
 
-on:
-  # 仅在推送到默认分支时运行。
-  push:
-    branches: ['main']
+# 确保脚本抛出遇到的错误
+set -e
 
-  # 这个选项可以使你手动在 Action tab 页面触发工作流
-  workflow_dispatch:      
+# 生成静态文件
+npm run build
 
-# 设置 GITHUB_TOKEN 的权限，以允许部署到 GitHub Pages。
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+# 进入生成的文件夹
+cd docs/.vitepress/dist
 
-# 允许一个并发的部署
-concurrency:
-  group: 'pages'
-  cancel-in-progress: true
+# 如果是发布到自定义域名
+# echo 'www.example.com' > CNAME
 
-jobs:
-  # 单次部署的工作描述
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Set up Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          cache: 'pnpm'
-      - name: Install dependencies
-        run: pnpm install
-      - name: Build
-        run: npm run build
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          # Upload dist repository
-          path: './docs/.vitepress/dist'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+git init
+git add -A
+git commit -m 'deploy'
+
+# 如果发布到 https://<USERNAME>.github.io/<REPO>
+git push -f git@github.com:xxholly32/element-plus-pro.git main:gh-pages
+
+cd -
