@@ -1,0 +1,8 @@
+{
+  "name": "@element-plus-pro/theme-reset",
+  "version": "1.0.0-alpha.1",
+  "license": "MIT",
+  "deepDependencies": {
+    "sass": "^1.50.0"
+  }
+}

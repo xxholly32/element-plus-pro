@@ -1,0 +1,17 @@
+{
+  "extends": "@antfu",
+  "rules": {
+    "no-console": "off",
+    "no-tabs": "off",
+    "@typescript-eslint/ban-ts-comment": "off"
+  },
+  "ignorePatterns": [
+    "docs/components/*", 
+    "docs/examples/*", 
+    "docs/.vitepress/cache/**/*", 
+    "docs/.vitepress/dist/**/*", 
+    "packages/icons-vue/lib/*", 
+    "packages/icons-vue/components/*", 
+    "packages/utils/**/*"
+  ]
+}

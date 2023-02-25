@@ -1,0 +1,22 @@
+{
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "pnpm run --C docs dev",
+    "docs:serve": "pnpm run --C docs serve",
+    "docs:build": "pnpm run -C docs build",
+    "docs:preview": "pnpm run -C docs preview",
+    "lint": "eslint . --fix",
+    "deploy": "bash deploy.sh",
+    "deploy:ezsvs": "ezsvs redeploy"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.34.1",
+    "@vue-macros/volar": "^0.5.15",
+    "eslint": "^8.32.0",
+    "ezsvs-cli": "^0.0.4",
+    "typescript": "^4.9.4",
+    "unplugin-vue-macros": "^1.7.3"
+  }
+}

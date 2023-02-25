@@ -1,0 +1,10 @@
+{
+  "button": ["basic", "custom", "disabled", "group", "icon", "link", "loading", "size", "text"],
+  "checkbox": ["basic", "button-style", "disabled", "grouping", "intermediate", "limitation", "with-border"],
+  "dialog": ["align-center", "basic-usage", "centered-content", "customization-content", "customization-header", "destroy-on-close", "draggable-dialog", "focus-trapping", "nested-dialog"],
+  "message": ["basic", "centered-content", "closable", "different-types", "grouping", "raw-html"],
+  "input": ["auto-sizing-textarea", "basic", "clearable", "disabled", "formatter", "length-limiting", "mixed-input", "password", "textarea", "various-size", "with-icon"],
+  "form": ["accessibility", "alignment", "basic-form", "custom-validation", "form-items", "inline-form", "number-validate", "size-control", "validation"],
+  "select": ["allow-create", "basic-usage", "clearable", "custom-template", "disabled-option", "disabled", "filterable", "grouping", "multiple", "remote-search"],
+  "tree": ["accordion", "basic", "checking-tree", "custom-leaf", "custom-node-class", "customized-node", "default-state", "disabled", "draggable", "filtering", "selectable"]
+}

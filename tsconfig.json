@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "ESNext",
+    "target": "es2016",
+    "lib": ["DOM", "ESNext"],
+    "strict": true,
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": [
+      "vite/client",
+      "vue/ref-macros",
+      "unplugin-vue-macros/macros-global",
+      "element-plus/global"
+    ],
+    "paths": {
+      "@/*": ["docs/*"],
+      "@@/*": ["packages/*"],
+      "@element-plus/utils": [
+        "packages/utils"
+      ],
+      "@element-plus/hooks": [
+        "node_modules/element-plus"
+      ],
+      "@element-plus/components": [
+        "node_modules/element-plus"
+      ]
+    }
+  },
+  "vueCompilerOptions": {
+    "plugins": [
+      "@vue-macros/volar/define-model",
+      "@vue-macros/volar/define-props",
+      "@vue-macros/volar/define-slots"
+    ]
+  }
+}

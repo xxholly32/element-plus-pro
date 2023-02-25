@@ -1,0 +1,89 @@
+@forward "element-plus/theme-chalk/src/common/var.scss" with (
+  $colors:  (
+    "primary": (
+      "base": #e72528,
+    ),
+    "success": (
+      "base": #02bf0f,
+    ),
+    "warning": (
+      "base": #ff952c,
+    ),
+    "danger": (
+      "base": #fa3239,
+    ),
+    "info": (
+      "base": #2196f3,
+    ),
+  ),
+  $border-color-hover: #c0c4cc,
+  $font-family: (
+    '': "'Segoe UI', 'Microsoft YaHei', Arial, Helvetica, sans-serif"
+  ),
+
+  // Components
+  // input
+  $input: (
+    'border-radius': inherit,
+  ),
+  // Tree
+  $tree: (
+    'expand-icon-color': var(--el-text-color-secondary),
+    'expand-icon-size': 16px,
+    'node-height': 32px,
+    'current-node-bg': var(--el-color-primary),
+    'current-node-color': var(--el-color-white),
+  ),
+  // Checkbox
+  $checkbox: (
+    'checked-icon-color': var(--el-color-primary),
+    'checked-bg-color': var(--el-bg-color),
+    'checked-hover-bg-color': var(--el-color-primary-light-8),
+    'checked-text-color': var(--el-text-color-regular),
+  ),
+  // popper
+  $popper: (
+    'border-radius': var(--el-border-radius-small),
+    'bg-color': var(--el-fill-color-light),
+    'dark-bg-color': #555,
+    'dark-color': #f5f5f5,
+    'arrow-bg-color': var(--el-fill-color-light),
+    'dark-arrow-bg-color': #555,
+  ),
+  // Button
+  $button: (
+    'hover-text-color': var(--el-text-color-regular),
+    'hover-bg-color': var(--el-fill-color-dark),
+    'hover-border-color': var(--el-border-color-dark),
+    'border-radius': var(---el-border-radius-small),
+    'padding-vertical-large': 0px,
+    'padding-vertical-default': 0px,
+    'padding-vertical-small': 0px,
+    'padding-horizontal-large': 18px,
+    'padding-horizontal-default': 16px,
+    'padding-horizontal-small': 6px,
+    'height-large': 36px,
+    'height-default': 32px,
+    'height-small': 28px,
+  ),
+  // Table
+  $table: (
+    'header-text-color':  var(--el-text-color-regular),
+    'header-bg-color': var(--el-fill-color-darker),
+  ),
+  // dialog 
+  $dialog: (
+    'title-font-size':  var(--el-font-size-base),
+    'padding-primary':  10px,
+  ),
+  // message
+  $message: (
+    'padding':  14px 12px,
+  ),
+);
+
+// @debug $--colors;
+@use "./dark.scss";
+
+// if you want to import all
+@use "element-plus/theme-chalk/src/index.scss" as *;

@@ -1,0 +1,36 @@
+{
+  "name": "docs",
+  "type": "module",
+  "version": "1.0.0",
+  "license": "ISC",
+  "scripts": {
+    "build:generate": "node build/generate.js",
+    "dev": "vitepress dev . --host",
+    "build": "pnpm run build:generate && vitepress build .",
+    "serve": "pnpm run build:generate && vitepress dev . --host",
+    "preview": "vitepress preview ."
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.0.9",
+    "@vueuse/core": "^9.12.0",
+    "axios": "^0.27.2",
+    "camelcase": "^7.0.0",
+    "element-plus": "npm:element-plus@latest",
+    "markdown-it": "^13.0.1",
+    "prism-theme-vars": "^0.2.4",
+    "prismjs": "^1.29.0",
+    "unocss": "^0.49.4",
+    "vite-plugin-prismjs": "^0.0.8",
+    "vitepress": "1.0.0-alpha.46",
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "@types/node": "^18.13.0",
+    "fs-extra": "^10.1.0",
+    "markdown-it-container": "^3.0.0",
+    "sass": "^1.53.0",
+    "typescript": "^4.7.4",
+    "unplugin-vue-components": "^0.20.1",
+    "vite": "^4.0.0"
+  }
+}
