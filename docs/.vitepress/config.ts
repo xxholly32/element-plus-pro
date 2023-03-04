@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 import { mdPlugin } from './config/plugins.js'
 
 export default defineConfig({
+  base: '/element-plus-pro/',
   ignoreDeadLinks: true,
   title: 'Element Plus Pro',
   description: 'a Vue 3 based component library for designers and developers',

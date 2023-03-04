@@ -9,8 +9,7 @@
     "docs:preview": "pnpm run -C docs preview",
     "generate": "pnpm run --filter docs build:generate",
     "build": "npm run generate && npm run docs:build",
-    "lint": "eslint . --fix",
-    "deploy": "bash deploy.sh"
+    "lint": "eslint . --fix"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.34.1",
