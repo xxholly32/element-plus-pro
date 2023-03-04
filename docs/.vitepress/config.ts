@@ -13,6 +13,10 @@ export default defineConfig({
       '/components': sidebarComponents(),
       '/custom': sidebarCustom(),
     },
+
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/xxholly32/element-plus-pro' },
+    ],
   },
   markdown: {
     config: md => mdPlugin(md),
